@@ -87,7 +87,7 @@ export class Decorator extends ModuleBase {
       style_class: "system-status-icon",
     });
 
-    this.#button = new PanelMenuButton(0.0);
+    this.#button = new PanelMenuButton(0.0, null, true);
 
     this.#button.add_child(icon);
     this.#button.connect("button-press-event", () => this.#toggleBedtimeMode());
